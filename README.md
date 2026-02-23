@@ -11,6 +11,28 @@ Mini projeto **Full Stack** desenvolvido como teste técnico para vaga de **Dese
 | ![Node.js](https://img.icons8.com/color/48/000000/nodejs.png) | ![NPM](https://img.icons8.com/color/48/000000/npm.png) | <img src="https://icon.icepanel.io/Technology/png-shadow-512/Express.png" width="48" /> | <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" width="48" /> | ![PostgreSQL](https://img.icons8.com/color/48/000000/postgreesql.png) | ![React](https://img.icons8.com/color/48/000000/react-native.png) | <img src="https://vitejs.dev/logo.svg" width="48" /> | ![TailwindCSS](https://img.icons8.com/color/48/000000/tailwind_css.png) | <img src="https://icon.icepanel.io/Technology/svg/Azios.svg" width="48" /> |
 ---
 
+<div style="text-align: center;">
+
+  <h2>⚡ Ferramentas de Deploy</h2>
+
+  <table style="margin: 0 auto; text-align: center;">
+    <tr>
+      <td style="padding: 50px;">
+        <img src="https://www.svgrepo.com/show/354513/vercel-icon.svg" alt="Vercel" style="width:96px; height:96px;">
+        <div><a href="https://vercel.com/">Vercel</a></div>
+      </td>
+      <td style="padding: 50px;">
+        <img src="https://pbs.twimg.com/profile_images/2002125723621060608/nxgDW055_400x400.jpg" alt="Render" style="width:96px; height:96px;">
+        <div><a href="https://render.com/">Render</a></div>
+      </td>
+      <td style="padding: 50px;">
+        <img src="https://neon.com/brand/neon-logomark-dark-color.svg?updated=2026-01-21" alt="Neon" style="width:96px; height:96px;">
+        <div><a href="https://neon.com/">Neon</a></div>
+      </td>
+    </tr>
+  </table>
+</div>
+
 ## 📌 Problema
 
 O setor funerário necessita organizar reservas de capelas e cerimônias de forma eficiente, evitando conflitos de horários e facilitando o compartilhamento de informações com familiares.
