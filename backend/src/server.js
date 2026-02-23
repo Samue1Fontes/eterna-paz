@@ -5,6 +5,7 @@ import pool from "./config/database.js";
 import predioRoutes from "./routes/predioRoutes.js";
 import capelaRoutes from "./routes/capelaRoutes.js";
 import reservaRoutes from "./routes/reservaRoutes.js";
+import authRoutes from "./routes/authRoutes.js";
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(express.json());
 app.use("/predios", predioRoutes);
 app.use("/capelas", capelaRoutes);
 app.use("/reservas", reservaRoutes);
+app.use("/auth", authRoutes);
 
 app.get("/", async (req, res) => {
   const result = await pool.query("SELECT NOW()");

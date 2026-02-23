@@ -57,13 +57,19 @@ const validarConflitoHorario = (
       fimExistente.getHours() + INTERVALO_TECNICO_HORAS
     );
 
+    // verifica conflito de horário
     const conflito =
-      novoInicio < fimExistente &&
-      novoFim > inicioExistente;
+      novoInicio <= fimExistente &&
+      novoFim >= inicioExistente;
 
-    if (conflito) {
+    // identifica intervalo técnico
+    const igualIntervalo =
+      novoInicio.getTime() === inicioExistente.getTime() &&
+      novoFim.getTime() === new Date(reserva.data_fim).getTime();
+
+    if (conflito || igualIntervalo) {
       throw new Error(
-        "Horário indisponível devido ao intervalo técnico."
+        "Horário indisponível devido a reserva existente ou intervalo técnico."
       );
     }
   }
@@ -210,6 +216,19 @@ export const removerReserva = async (id) => {
  */
 export const buscarConvite = async (slug) => {
   const reserva = await findBySlug(slug);
+
+  if (!reserva) {
+    throw new Error("Reserva não encontrada");
+  }
+
+  return reserva;
+};
+
+/**
+ * Buscar reserva por ID
+ */
+export const buscarReservaPorId = async (id) => {
+  const reserva = await findById(id);
 
   if (!reserva) {
     throw new Error("Reserva não encontrada");

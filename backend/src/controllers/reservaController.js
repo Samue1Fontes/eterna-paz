@@ -4,6 +4,7 @@ import {
   listarReservas,
   removerReserva,
   buscarConvite as buscarConviteService,
+  buscarReservaPorId,
 } from "../services/reservaService.js";
 
 /**
@@ -93,6 +94,24 @@ export const remover = async (req, res) => {
       mensagem: "Reserva removida com sucesso",
       reserva,
     });
+  } catch (error) {
+    if (error.message === "Reserva não encontrada") {
+      return res.status(404).json({ erro: error.message });
+    }
+
+    res.status(400).json({ erro: error.message });
+  }
+};
+
+/**
+ * GET /reservas/:id
+ */
+export const buscarPorId = async (req, res) => {
+  try {
+    const { id } = req.params;
+  const reserva = await buscarReservaPorId(id);
+
+  res.json(reserva);
   } catch (error) {
     if (error.message === "Reserva não encontrada") {
       return res.status(404).json({ erro: error.message });

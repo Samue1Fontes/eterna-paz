@@ -132,6 +132,33 @@ Servidor disponível em:
 http://localhost:3000
 ```
 
+### 3️⃣ Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Por padrão o frontend usa a variável de ambiente `VITE_API_URL` para apontar para a API. Em desenvolvimento defina:
+
+```
+VITE_API_URL=http://localhost:3000
+```
+
+### Credenciais de acesso (admin)
+
+- usuário: `admin`
+- senha: `admin@123`
+
+Use `/login` no frontend para autenticar. Após autenticação um token JWT será armazenado em `localStorage` e usado nas requisições administrativas.
+
+### Observações
+
+- A rota pública do convite é: `/reservas/convite/:slug` (o frontend disponibiliza `/convite/:slug` para visualização pública). 
+- Para editar capela de uma reserva é necessário excluir e criar nova reserva (capela não é editável uma vez criada).
+- Se houver problemas com dependências rode `npm install` nos diretórios `backend` e `frontend`.
+
 ---
 
 ## 📌 Objetivo do Projeto

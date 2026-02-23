@@ -98,9 +98,14 @@ export const findReservasByCapelaAndDate = async (
  */
 export const findById = async (id) => {
   const query = `
-    SELECT *
-    FROM reservas
-    WHERE id = $1;
+    SELECT
+      r.*,
+      c.nome AS capela_nome,
+      p.nome AS predio_nome
+    FROM reservas r
+    JOIN capelas c ON c.id = r.capela_id
+    JOIN predios p ON p.id = c.predio_id
+    WHERE r.id = $1;
   `;
 
   const result = await pool.query(query, [id]);
