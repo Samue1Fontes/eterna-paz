@@ -2,7 +2,7 @@
 import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
-import pool from "../config/database.js"; // atenção ao caminho
+import pool from "./config/database.js";
 import predioRoutes from "./routes/predioRoutes.js";
 import capelaRoutes from "./routes/capelaRoutes.js";
 import reservaRoutes from "./routes/reservaRoutes.js";
