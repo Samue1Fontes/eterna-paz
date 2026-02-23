@@ -6,7 +6,7 @@ Mini projeto **Full Stack** desenvolvido como teste técnico para vaga de **Dese
 
 ## ⚙️ Tecnologias
 
-| Node.js 24.10.0 | NPM 11.6.1 | Express 5.2.1 | dotenv 17.3.1 | PostgreSQL 18.2 | React 18 | Vite 5 | TailwindCSS 3 | Axios |
+| Node.js 24.10.0 | NPM 11.6.1 | Express 5.2.1 | dotenv 17.3.1 | PostgreSQL 18.2 | React 18 | Vite 5 | TailwindCSS 4 | Axios |
 |:---------------:|:----------:|:-------------:|:-------------:|:---------------:|:--------:|:------:|:-------------:|:-----:|
 | ![Node.js](https://img.icons8.com/color/48/000000/nodejs.png) | ![NPM](https://img.icons8.com/color/48/000000/npm.png) | <img src="https://icon.icepanel.io/Technology/png-shadow-512/Express.png" width="48" /> | <img src="https://raw.githubusercontent.com/motdotla/dotenv/master/dotenv.svg" width="48" /> | ![PostgreSQL](https://img.icons8.com/color/48/000000/postgreesql.png) | ![React](https://img.icons8.com/color/48/000000/react-native.png) | <img src="https://vitejs.dev/logo.svg" width="48" /> | ![TailwindCSS](https://img.icons8.com/color/48/000000/tailwind_css.png) | <img src="https://icon.icepanel.io/Technology/svg/Azios.svg" width="48" /> |
 ---
